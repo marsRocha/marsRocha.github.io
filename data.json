@@ -1,0 +1,228 @@
+{
+    "hero": {
+      "name": "Márcio Rocha",
+      "description": [
+        "Software Developer",
+        "Game Developer",
+        "Fullstack Developer"
+      ]
+    },
+    "about": {
+        "profilePic": "me.png",
+        "bio": [
+            "Hello! My name is Márcio and I’m from a small town near Braga, Portugal. Since I can remember I’ve had a passion for video games which lead me towards computers and ultimately programming. Nowadays I develop my own video games and I’m also passionate about developing web applications, mainly on the entire frontend spectrum.",
+            "I consider myself a well-organized and hardworking person with a creative streak. I'm always keen to learn new technologies that excite me and improve my skills."
+        ],
+        "resumedownload": "https://raw.githubusercontent.com/marsRocha/marsRocha.github.io/master/cv.pdf",
+        "education": [
+            {
+              "school": "University of Minho",
+              "degree": "Master’s Degree in Computer Science",
+              "graduated": "2019 - 2022",
+              "description": "Specialization in Application Engineering and Distributed Systems"
+            },
+            {
+                "school": "Polytechnic Institute of Cávado and Ave",
+                "degree": "Bachelor’s Degree in Digital Games Development Engineering",
+                "graduated": "2016 - 2019",
+                "description": null
+              }
+          ],
+        "work": [
+            {
+                "id": 0,
+                "company": "Hivolve",
+                "companyUrl": "https://www.accenture.com",
+                "timespan": "Mar - Jul 2019",
+                "role": "Game Developer",
+                "notes": [
+                    "Designed and developed multiple mobile games in Unity for both android and iOS",
+                    "Maintained schedules and assured on-time delivery of proposed tasks",
+                    "Established teamwork practice skills with a cross-functional team"
+                ]
+            },
+            {
+                "id": 1,
+                "company": "Accenture",
+                "companyUrl": "https://hivolve.com",
+                "timespan": "Out 2020 - Fev 2021",
+                "role": "Software Engineer",
+                "notes": [
+                    "Improved an already built fleet management web application",
+                    "Integrated new features with Google Cloud Platform service",
+                    "Developed solutions for storing and processing data from IoT devices"
+                ]
+            }
+        ]
+    },
+    "skills": {
+        "softwareDev": "I am a fullstack developer with a passion to bring beautiful and functional web designs to life.",
+        "gameDev": "I bring to life whatever my imagination can find and implement the logic behind it to make it work.",
+        "languages": [
+            "Java",
+            "JavaScript",
+            "CSS",
+            "Python",
+            "C#",
+            "C",
+            "PHP",
+            "HTML",
+            "Swift"
+        ],
+        "data": [
+            "MySQL",
+            "PostgreSQL",
+            "MongoDB",
+            "Neo4j"
+        ],
+        "web": [
+            "Spring",
+            "Node.js",
+            "Next.js",
+            "Framer Motion",
+            "React",
+            "Vue.js",
+            "Bootstrap"
+        ],
+        "game": [
+            "Unity",
+            "Blender",
+            "Autodesk Maya",
+            "Autodesk 3DS Max"
+        ],
+        "design": [
+            "Figma",
+            "Adobe Photoshop",
+            "Adobe Illustrator",
+            "Adobe Lightroom",
+            "Procreate"
+        ]
+    },
+    "portfolio": [
+        {
+            "title": "Nutris App",
+            "desc": "A web app to assist and improve the workflow of nutritionists. Nutris’ features ease the process of scheduling appointments, keep track of clients’ progress, create personalized meal plans and nutrition charts. Clients can also track their progress, check their food plans and appointments.",
+            "tech": [
+                "Vue.js",
+                "Bootstrap",
+                "Spring", 
+                "Java",
+                "Hibernate"
+            ],
+            "externalLinks": {
+                "sourceCode": null,
+                "demo": null 
+            },
+            "img" : "nutris.svg"
+        },
+        {
+            "title": "Multiplayer Game System",
+            "desc": "A massively multiplayer online system capable of handling hundreds of clients and running multiple game sessions simultaneously and independently. Along with it, a multiplayer party game with up to 60 players, based on “Fall Guys”, was also developed. Players are thrown into crazy obstacle courses while struggling to reach the finish line and be victorious.",
+            "tech": [
+                "Unity",
+                "C#"
+            ],
+            "externalLinks": { 
+                "sourceCode": null,
+                "demo": null
+            },
+            "img" : "dummyguys.svg"
+        },
+        {
+            "title": "Backup Surgeons",
+            "desc": "Local multiplayer surgery game for up to four players. The inexperienced surgeons must work as a team in a chaotic environment to perform surgery on several patients before the time runs out.",
+            "tech": [
+                "Unity",
+                "C#",
+                "HLSL"
+            ],
+            "externalLinks": {
+                "sourceCode": null,
+                "demo": null
+            },
+            "img" : "backupsurgeons.svg"
+        }
+    ],
+    "archive": [
+        {
+            "id": 1,
+            "title": "Negotiations Platform",
+            "desc": "Console app that allows manufacturers to negotiate with producers on orders. A manufacturer can place a request for a product on the platform, while the producers can place an offer to their request.",
+            "tech": [
+                "Erlang",
+                "Java"
+            ],
+            "externalLinks": { 
+                "sourceCode": null,
+                "demo": null
+            }
+        },
+        {
+            "id": 2,
+            "title": "This Portfolio",
+            "desc": null,
+            "tech": [
+                "Figma",
+                "React",
+                "Next.js",
+                "CSS",
+                "Framer Motion"
+            ],
+            "externalLinks": { 
+                "sourceCode": null,
+                "demo": null
+            }
+        },
+        {
+            "id": 3,
+            "title": "Messaging Platform",
+            "desc": "A console app based on message publication and subscription to relevant topics, like “Twitter”. Users can post messages tagged with a topic or search for a certain topic and obtain the ten latest posted messages.",
+            "tech": [
+                "HTML",
+                "Java",
+                "CSS"
+            ],
+            "externalLinks": { 
+                "sourceCode": null,
+                "demo": null
+            }
+        },
+        {
+            "id": 4,
+            "title": "Decentralized Aggregation",
+            "desc": "Python program that implements a decentralized aggregation (extrema propagation) algorithm into a network of nodes to know its approximated dimension.",
+            "tech": [
+                "Python"
+            ],
+            "externalLinks": { 
+                "sourceCode": "https://github.com/Dans24/SDLE-Decentralized-Aggregation",
+                "demo": null 
+            }
+        }
+    ],
+    "contacts": {
+        "email": "marciorocha.dev@gmail.com",
+        "socials": [
+            {
+                "name": "Github",
+                "url": "http://github.com/marsRocha",
+                "className": "github"
+            },
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/marcio-silva-rocha",
+                "className": "linkedin"
+            },
+            {
+                "name": "Instagram",
+                "url": "https://www.instagram.com/marcio._.rocha/",
+                "className": "instagram"
+            },
+            {
+                "name": "Twitter",
+                "url": "https://twitter.com/marsRoch",
+                "className": "twitter"
+            }
+        ]
+    }
+}
