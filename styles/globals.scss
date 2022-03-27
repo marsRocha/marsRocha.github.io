@@ -8,7 +8,6 @@ body {
   background-color: #141414;
   color: #ffffff;
   position: relative;
-  overflow-x: hidden;
 }
 
 ul {
@@ -132,6 +131,34 @@ h3 {
   background-size: contain;
   background-repeat:  repeat;
   z-index: -2;
+  overflow-x: hidden;
+}
+
+.home-floater {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: transform 0.2s;
+  margin: 1em;
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+
+  svg {
+    padding-top: .4em;
+    filter: invert(95%);
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.home-floater-hidden {
+  transform: translateY(100px);
 }
 
 /*--------------------------------- NAVBAR ---------------------------------*/
@@ -166,10 +193,6 @@ h3 {
 
 /*--------------------------------- HERO ---------------------------------*/
 
-.hero_container {
-  padding: 4em;
-  padding-bottom: 0;
-}
 .stars-container {
   position: relative;
 }
@@ -188,6 +211,14 @@ h3 {
   height: 1080px;
   bottom: 0;
   z-index: -10;
+}
+
+.front-page {
+  height: 100vh;
+}
+
+.hero_container {
+  height: 100%;
 }
 
 .hero_design__container {
@@ -210,6 +241,7 @@ h3 {
   font-size: 2.25em;
   font-weight: 200;
   line-height: 1em;
+  height: 61px;
   letter-spacing: -.05em;
   color: #FFFFFF;
   word-wrap: break-word;
@@ -217,7 +249,7 @@ h3 {
 }
 
 .more {
-  margin: 4em auto 0em auto;
+  margin: 4em auto;
   letter-spacing: -.05em;
 
   svg {
@@ -226,6 +258,10 @@ h3 {
 }
 
 /*--------------------------------- ABOUT ME ---------------------------------*/
+
+.about {
+  padding-top: 0em;
+}
 
 .about_container {
   padding-top: 2em;
@@ -440,7 +476,7 @@ h3 {
   }
 }
 
-.skill-container:hover {
+.skill-container-li:hover {
   background-color: #ffffff10;
 }
 
@@ -754,6 +790,10 @@ h3 {
     font-size: 3em;
   }
 
+  .about {
+    padding-top: 10em;
+  }
+
   .about_container {
     display: grid;
     grid-template-columns: 40% auto;
@@ -931,7 +971,6 @@ h3 {
   .hero_design__container {
     display: unset;
     margin-left: -5%;
-    margin-top: -3.5em;
     width: 100%;
     max-width: 502px;
   }
@@ -950,6 +989,16 @@ h3 {
 /*--------------------------------- 1250PX ---------------------------------*/
 
 @media only screen and (min-width: 1250px) {
+
+  .home-floater {
+    height: 65px;
+    width: 65px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
 
   .nav_container header {
     padding: 2em 11em 2em 9.5em;
@@ -1021,6 +1070,7 @@ h3 {
 /*--------------------------------- 404 ---------------------------------*/
 
 .not-found {
+  overflow-x: hidden;
 
   .background-container {
     position: relative;
@@ -1028,8 +1078,8 @@ h3 {
   
   .background-img {
     position: absolute;
-    width: 1917px;
-    height: 410px;
+    width: 1920px;
+    height: 1080px;
     top: 0;
     left: 0;
     z-index: -10;

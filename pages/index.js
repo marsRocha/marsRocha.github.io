@@ -8,8 +8,11 @@ import Archive from '../components/archive/archive'
 
 import data from '../data.json'
 
+import { IoMdRocket} from "react-icons/io"
+
 import { useEffect, useState, useRef, useLayoutEffect } from 'react';
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
+import { Link } from 'react-scroll'
 
 export default function Home() {
 
@@ -21,18 +24,39 @@ export default function Home() {
     clamp: false
   });
 
-  const y2 = useTransform(scrollY, [elementTop, elementTop + 1], [0, -.5], {
+  /*const y2 = useTransform(scrollY, [elementTop, elementTop + 1], [0, -.5], {
     clamp: false
-  });
+  });*/
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const element = ref.current;
     setElementTop(element.offsetTop);
   }, [ref]);
 
+  useEffect(() => {
+    const rocket = document.querySelector(".home-floater");
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll", () => {
+      if(lastScrollY < window.scrollY) {
+        rocket.classList.add("home-floater-hidden");
+      } else {
+        rocket.classList.remove("home-floater-hidden");
+      }
+
+      lastScrollY = window.scrollY;
+    })
+  }, []);
+
   return (
     <div  className='main'>
-      <div ref={ref}>
+      <div title="Home" className='home-floater home-floater-hidden'>
+        <Link to="navbar" href="#navbar" smooth={true}>
+            <IoMdRocket/>
+        </Link>
+      </div>
+
+      <div className='front-page' ref={ref}>
         <motion.div className='stars-container' style={{ y}}>
           <img className='stars-top' src="/stars-top.png" alt='background' ></img>
         </motion.div>

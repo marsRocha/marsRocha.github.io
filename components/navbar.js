@@ -48,7 +48,7 @@ const childVariants = {
 
 const navbar = () => {
     return (
-        <div className="nav_container">
+        <div className="nav_container" id="navbar">
             <header>
                 <motion.div className="logo" variants={logoVariants} initial="hidden" animate="visible" whileHover={{ scale: 1.2 }}>
                     <a href='.'>
