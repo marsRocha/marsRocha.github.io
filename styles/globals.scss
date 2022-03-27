@@ -195,6 +195,8 @@ h3 {
 
 .stars-container {
   position: relative;
+  user-select: none;
+  z-index: -5;
 }
 
 .stars-top {
@@ -202,7 +204,6 @@ h3 {
   width: 1920px;
   height: 1080px;
   top: 0;
-  z-index: -10;
 }
 
 .stars-bottom {
@@ -210,7 +211,6 @@ h3 {
   width: 1920px;
   height: 1080px;
   bottom: 0;
-  z-index: -10;
 }
 
 .front-page {
@@ -296,7 +296,7 @@ h3 {
 }
 
 
-//------ education and work experience
+//------ education and work experience --------- //
 
 .subsubsection_title {
   display: flex;
@@ -410,39 +410,6 @@ h3 {
 
 /*--------------------------------- SKILLS ---------------------------------*/
 
-.skills_container ul li {
-  padding: 2em 2em 0em 2em;
-  margin-bottom: 1em;
-
-  .icon_container {
-    height: 100px;
-    display: grid;
-    place-content: center;
-    margin: 0 auto;
-
-    &.one svg {
-      width: 50px;
-    }
-
-    &.two svg {
-      width: 50px;
-    }
-  }
-
-  .skill_title {
-    margin-top: 0em;
-    font-weight: bold;
-    font-size: .9rem;
-    word-wrap: break-word;
-    hyphens: auto;
-  }
-
-  .skill_desc {
-    max-width: 310px;
-    margin: auto;
-  }
-}
-
 .skills-table-container {
   header {
     display: flex;
@@ -521,18 +488,6 @@ h3 {
       max-width: 50px;
     }
   }
-}
-
-.divider_wrapper {  
-  margin: 3em 0em 1em 0em;
-  display: flex;
-  justify-content: center;
-}
-
-.divider {
-  width: 250px;
-  height: 1px;
-  background-color: #5d5236;
 }
 
 /*--------------------------------- PORTFOLIO ---------------------------------*/
@@ -701,6 +656,7 @@ h3 {
   p {
     padding-top: 1.5em;
     font-size: 0.85em;
+    cursor: pointer;
   }
 
   p:hover {
@@ -812,8 +768,7 @@ h3 {
 
     &.one {
       .content {
-        margin: 0em 9em;
-        margin-top: 2em;
+        margin: 0em 4em;
       }
     }
 

@@ -32,7 +32,7 @@
             {
                 "id": 0,
                 "company": "Hivolve",
-                "companyUrl": "https://www.accenture.com",
+                "companyUrl": "https://hivolve.com",
                 "timespan": "Mar - Jul 2019",
                 "role": "Game Developer",
                 "notes": [
@@ -44,7 +44,7 @@
             {
                 "id": 1,
                 "company": "Accenture",
-                "companyUrl": "https://hivolve.com",
+                "companyUrl": "https://www.accenture.com",
                 "timespan": "Out 2020 - Fev 2021",
                 "role": "Software Engineer",
                 "notes": [
@@ -117,7 +117,7 @@
         },
         {
             "title": "Multiplayer Game System",
-            "desc": "A massively multiplayer online system capable of handling hundreds of clients and running multiple game sessions simultaneously and independently. Along with it, a multiplayer party game with up to 60 players, based on “Fall Guys”, was also developed. Players are thrown into crazy obstacle courses while struggling to reach the finish line and be victorious.",
+            "desc": "A massively multiplayer online game system capable of handling hundreds of clients and running multiple game sessions simultaneously and independently. Along with it, a multiplayer party game with up to 60 players, based on “Fall Guys”, was also developed.",
             "tech": [
                 "Unity",
                 "C#"
