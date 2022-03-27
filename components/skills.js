@@ -86,7 +86,7 @@ const Skills = (props) => {
                     <div>
                         <header>
                             {tableSectiors.map((element, index) => (
-                                <button className={`skill-section-button ${currentSkillArray == index ? 'work-button-active' : ''}`} id={index} onClick = {() => {setCurrentSkillArray(index)}}>
+                                <button className={`skill-section-button ${currentSkillArray == index ? 'work-button-active' : ''}`} key={index} onClick = {() => {setCurrentSkillArray(index)}}>
                                     <span>{element}</span>
                                 </button>
                             ))}
