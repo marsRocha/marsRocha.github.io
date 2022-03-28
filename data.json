@@ -11,9 +11,9 @@
         "profilePic": "me.png",
         "bio": [
             "Hello! My name is Márcio and I’m from a small town near Braga, Portugal. Since I can remember I’ve had a passion for video games which lead me towards computers and ultimately programming. Nowadays I develop my own video games and I’m also passionate about developing web applications, mainly on the entire frontend spectrum.",
-            "I consider myself a well-organized and hardworking person with a creative streak. I'm always keen to learn new technologies that excite me and improve my skills."
+            "I consider myself a well-organised and hardworking person with a creative streak. I'm always keen to learn new technologies that excite me and improve my skills."
         ],
-        "resumedownload": "https://raw.githubusercontent.com/marsRocha/marsRocha.github.io/master/cv.pdf",
+        "resumedownload": "https://raw.githubusercontent.com/marsRocha/marsRocha.github.io/master/cv_marcio_rocha.pdf",
         "education": [
             {
               "school": "University of Minho",
@@ -33,10 +33,10 @@
                 "id": 0,
                 "company": "Hivolve",
                 "companyUrl": "https://hivolve.com",
-                "timespan": "Mar - Jul 2019",
+                "timespan": "Mar. - Jul. 2019",
                 "role": "Game Developer",
                 "notes": [
-                    "Designed and developed multiple mobile games in Unity for both android and iOS",
+                    "Designed and developed multiple mobile games in Unity for both Android and iOS",
                     "Maintained schedules and assured on-time delivery of proposed tasks",
                     "Established teamwork practice skills with a cross-functional team"
                 ]
@@ -45,11 +45,11 @@
                 "id": 1,
                 "company": "Accenture",
                 "companyUrl": "https://www.accenture.com",
-                "timespan": "Out 2020 - Fev 2021",
+                "timespan": "Out. 2020 - Feb. 2021",
                 "role": "Software Engineer",
                 "notes": [
-                    "Improved an already built fleet management web application",
-                    "Integrated new features with Google Cloud Platform service",
+                    "Improved an already existing fleet management web application",
+                    "Integrated new features with Google Cloud Platform technologies",
                     "Developed solutions for storing and processing data from IoT devices"
                 ]
             }
@@ -106,8 +106,7 @@
                 "Vue.js",
                 "Bootstrap",
                 "Spring", 
-                "Java",
-                "Hibernate"
+                "Java"
             ],
             "externalLinks": {
                 "sourceCode": null,
@@ -117,7 +116,7 @@
         },
         {
             "title": "Multiplayer Game System",
-            "desc": "A massively multiplayer online game system capable of handling hundreds of clients and running multiple game sessions simultaneously and independently. Along with it, a multiplayer party game with up to 60 players, based on “Fall Guys”, was also developed.",
+            "desc": "A massively multiplayer online game system capable of handling hundreds of clients and running multiple game sessions simultaneously and independently. Along with it, a multiplayer party game with up to sixty players, based on “Fall Guys”, was also developed.",
             "tech": [
                 "Unity",
                 "C#"

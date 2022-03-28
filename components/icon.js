@@ -3,7 +3,7 @@ import { SiMysql, SiPostgresql, SiMongodb, SiNeo4J } from "react-icons/si";
 import { SiSpring, SiNextdotjs, SiFramer, SiBlender, SiAdobephotoshop, SiAdobeillustrator, SiAdobelightroom, SiHibernate } from "react-icons/si";
 import Image from 'next/image'
 
-const extrasSize = 29.91;
+const extrasSize = 27;
 
 const Icon = (props) => {
     switch (props.name) {

@@ -24,6 +24,11 @@ a {
 
 img {
   width: 100%;
+  pointer-events: none;
+}
+
+svg {
+  pointer-events: none;
 }
 
 section {
@@ -185,7 +190,7 @@ h3 {
   
       a {
         display: block;
-        padding: 0 1em;
+        padding: 0 clamp(.5em, 2vw, 4em);
       }
     }
   }
@@ -276,6 +281,7 @@ h3 {
   
   .profile_img {
     border-radius: 5px;
+    user-select: none;
   }
 }
 
@@ -413,8 +419,6 @@ h3 {
 .skills-table-container {
   header {
     display: flex;
-    grid-row-gap: 10px;
-    row-gap: 10px;
     margin: 30px 0;
     justify-content: center;
     flex-wrap: wrap;
@@ -422,7 +426,7 @@ h3 {
     .skill-section-button {
       display: flex;
       width: 120px;
-      min-height: 80px;
+      height: 50px;
       align-items: center;
       text-align: center;
       justify-content: center;
@@ -436,7 +440,7 @@ h3 {
 
   .skills-table ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(80px,80px));
+    grid-template-columns: repeat(auto-fit,minmax(65px,65px));
     justify-content: center;
     max-width: 800px;
     margin: auto;
@@ -480,7 +484,7 @@ h3 {
     text-align: center;
 
     svg {
-      font-size: 2.2em;
+      font-size: 2em;
     }
 
     p {
@@ -492,6 +496,15 @@ h3 {
 
 /*--------------------------------- PORTFOLIO ---------------------------------*/
 
+.small-version {
+  display: unset;
+}
+
+.big-version {
+  display: none;
+}
+
+
 .projects_container{
   margin-top: 1.75em;
 }
@@ -502,6 +515,8 @@ h3 {
   .proj-img {
     margin-bottom: 2em;
     border-radius: 3px;
+    resize: auto;
+    flex: 1
   }
 }
 
@@ -520,11 +535,6 @@ h3 {
 
   ul{
     display: flex;
-
-    li {
-      display: block;
-      padding: .7em .5em 0 0;
-    }
   }
 }
 
@@ -572,13 +582,13 @@ h3 {
   margin: 3.75em auto;
   background-color: #DFC172;
   border-radius: 5px;
-  padding: 30px;
+  padding: clamp(0.5em, 5vw, 1.875em);
   text-align: left;
   height: 323px;
   max-width: 430px;
 
   header {
-    margin-bottom: 1.5em;
+    margin-bottom: clamp(0.7em, 3vw, 1.7em);
     display: flex;
     justify-content: space-between;
     font-size: .85rem;
@@ -607,17 +617,13 @@ h3 {
     margin: 0em;
   }
 
-  footer {
-    display: flex;
-    justify-content: space-between;
-  
-    ul {
-      display: flex;
-  
-      li {
-        display: block;
-        padding: 0 .5em 0 0;
-      }
+  footer ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(65px,65px));
+
+    li {
+      display: block;
+      padding: 0 .5em 0 0;
     }
   }
 
@@ -628,6 +634,8 @@ h3 {
   
   .project_desc {
     font-size: 1.0625em;
+    max-height: 140px;
+    overflow-y: scroll;
   }
 }
 
@@ -639,6 +647,7 @@ h3 {
   .contancts-title {
     font-weight: 600;
     font-size: clamp(40px, 5vw, 60px);
+    letter-spacing: unset;
   }
 }
 
@@ -651,6 +660,7 @@ h3 {
     border-radius: 3px;
     padding: 1em 3.175em;
     color: #DFC172;
+    overflow: hidden
   }
 
   p {
@@ -674,7 +684,7 @@ h3 {
   li {
     display: inline-block;
     margin: 0;
-    padding: 0 1.7em;
+    padding: 0 clamp(0.7em, 3vw, 1.7em);
   }
 
   .icon_wrapper {
@@ -752,7 +762,7 @@ h3 {
 
   .about_container {
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 45% auto;
   }
 
   .about_info {
@@ -806,6 +816,17 @@ h3 {
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+
+  .small-version {
+    display: none;
+  }
+
+  .big-version {
+    display: unset;
   }
 
   .skills_container{
@@ -928,11 +949,13 @@ h3 {
     margin-left: -5%;
     width: 100%;
     max-width: 502px;
+    user-select: none;
   }
 
   .portfolio img {
     float: right;
     max-width: 500px;
+    user-select: none;
 
     &.inverse {
       float: left;
@@ -1137,7 +1160,7 @@ h3 {
     .design-container {
       display: unset;
       margin-left: -5%;
-      margin-top: -11.5em;
+      margin-top: -5em;
       width: 100%;
       max-width: 502px;
     }

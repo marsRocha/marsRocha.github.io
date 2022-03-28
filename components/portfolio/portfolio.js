@@ -26,13 +26,15 @@ const Portfolio = (props) => {
                 </motion.div>
                 <div className='projects_container'>
                     <div className="project_container">
-                        <motion.div className='project-inner hide-mobile' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
-                            <Project project={props.portfolio[0]}/>
+                        <motion.div className='big-version' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
+                            <div className='project-inner'>
+                                <Project project={props.portfolio[0]}/>
+                            </div>
                         </motion.div>
                         <motion.div variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
-                            <Image className='proj-img' src={`/proj/${props.portfolio[0].img}`} alt='project1' width={1842} height={1071}/>
+                            <Image className='proj-img' src={`/proj/${props.portfolio[0].img}`} alt='project1' width={770} height={447}/>
                         </motion.div>
-                        <motion.div className='show-mobile' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
+                        <motion.div className='small-version' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                             <div className='project-inner'>
                                 <Project project={props.portfolio[0]}/>
                             </div>
@@ -47,14 +49,16 @@ const Portfolio = (props) => {
                         </motion.div>
                     </div>
                     <div className="project_container">
-                        <motion.div className='project-inner hide-mobile' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
-                            <Project project={props.portfolio[2]}/>
+                        <motion.div className='big-version' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
+                            <div className='project-inner'>
+                                <Project project={props.portfolio[2]}/>
+                            </div>
                         </motion.div>
                         <motion.div variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                             <Image className='proj-img' src={`/proj/${props.portfolio[2].img}`} alt='project3' width={1842} height={1071}/>
                         </motion.div>
-                        <motion.div className='show-mobile' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
-                            <div className='project-inner'>
+                        <motion.div className='small-version' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
+                            <div className='project-inner '>
                                 <Project project={props.portfolio[2]}/>
                             </div>
                         </motion.div>

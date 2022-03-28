@@ -57,7 +57,7 @@ export default function Home() {
       </div>
 
       <div className='front-page' ref={ref}>
-        <motion.div className='stars-container' style={{ y, "z-index": -2}}>
+        <motion.div className='stars-container' style={{ y}}>
           <img className='stars-top' src="/stars-top.png" alt='background' ></img>
         </motion.div>
 

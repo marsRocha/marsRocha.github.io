@@ -76,10 +76,12 @@ const Hero = (props) => {
             </motion.div>
             <motion.div variants={childVariants}>
               <Link to="about" href="#about" smooth={true}>
-                <svg width="50" height="95" viewBox="0 0 50 95" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="3" width="44" height="89" rx="22" stroke="#FFFFFF" strokeWidth="5"/>
-                  <motion.circle className="circle" cx="25.5" cy="68.5" r="14.5" fill="#FFFFFF" animate={{y: [-40, 0, 0]}} transition={{ duration: 1, repeat: Infinity, repeatType: "reverse"}}/>
-                </svg>
+                <div>
+                  <svg width="50" height="95" viewBox="0 0 50 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="44" height="89" rx="22" stroke="#FFFFFF" strokeWidth="5"/>
+                    <motion.circle className="circle" cx="25.5" cy="68.5" r="14.5" fill="#FFFFFF" animate={{y: [-40, 0, 0]}} transition={{ duration: 1, repeat: Infinity, repeatType: "reverse"}}/>
+                  </svg>
+                </div>
               </Link>
             </motion.div>
           </div>
