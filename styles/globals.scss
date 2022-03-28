@@ -825,7 +825,8 @@ h3 {
   }
 
   .big-version {
-    display: unset;
+    display: grid;
+    place-content: center;
   }
 
   .skills_container{
@@ -1083,8 +1084,6 @@ h3 {
     color: #DFC172;
     margin-top: 0;
     margin-bottom: 0;
-    word-wrap: break-word;
-    hyphens: auto;
   }
 
   .subtitle {
@@ -1093,8 +1092,6 @@ h3 {
     line-height: 1em;
     letter-spacing: -.05em;
     color: #FFFFFF;
-    word-wrap: break-word;
-    hyphens: auto;
   }
 
   .button-home {
