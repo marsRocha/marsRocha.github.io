@@ -96,8 +96,6 @@ h3 {
   display: flex;
   align-items: center;
   place-content: center;
-  word-wrap: break-word;
-  hyphens: auto;
 
   &.inverse {
     color: #eaeaea;
@@ -147,7 +145,7 @@ h3 {
   margin: 1em;
   height: 50px;
   width: 50px;
-  background-color: #ffffff;
+  background-color: #DFC172;
   border-radius: 50%;
   display: grid;
   justify-content: center;
@@ -159,6 +157,7 @@ h3 {
     filter: invert(95%);
     width: 35px;
     height: 35px;
+    color: #eaeaea;
   }
 }
 

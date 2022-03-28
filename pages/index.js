@@ -14,6 +14,15 @@ import { useEffect, useState, useRef, useLayoutEffect } from 'react';
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import { Link } from 'react-scroll'
 
+
+const style = [
+  'background-image: url("https://c.tenor.com/es-dWz_Xy8AAAAAd/hype-lizard.gif")',
+  'background-size: contain',
+  'color: #fff',
+  'padding: 0px 110px',
+  'line-height: 300px',
+  ].join(';');
+
 export default function Home() {
 
   const [elementTop, setElementTop] = useState(0);
@@ -34,13 +43,23 @@ export default function Home() {
   }, [ref]);
 
   useEffect(() => {
+    {console.log('%cHello there!', style)};
+    const mainW = document.querySelector(".main");
     const rocket = document.querySelector(".home-floater");
     let lastScrollY = window.scrollY;
 
     window.addEventListener("scroll", () => {
+      // check if scroll top or down
       if(lastScrollY < window.scrollY) {
         rocket.classList.add("home-floater-hidden");
       } else {
+        rocket.classList.remove("home-floater-hidden");
+      }
+
+      // check if reached top or down of page
+      if(window.scrollY == 0) {
+        rocket.classList.add("home-floater-hidden");
+      } else if (window.scrollY == mainW.scrollHeight - window.innerHeight) {
         rocket.classList.remove("home-floater-hidden");
       }
 
