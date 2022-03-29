@@ -77,7 +77,7 @@ export default function Home() {
 
       <div className='front-page' ref={ref}>
         <motion.div className='stars-container' style={{ y}}>
-          <img className='stars-top' src="/stars-top.png" alt='background' ></img>
+          <img className='stars-top' src="/stars-top2.png" alt='background' ></img>
         </motion.div>
 
         <Navbar/>
@@ -96,7 +96,7 @@ export default function Home() {
       <Contact contacts={data.contacts}/>
 
       <div className='stars-container'>
-        <motion.img className='stars-bottom' src="/stars-bottom.png" alt='background'></motion.img>
+        <motion.img className='stars-bottom' src="/stars-bottom2.png" alt='background'></motion.img>
       </div>
     </div>
   )
