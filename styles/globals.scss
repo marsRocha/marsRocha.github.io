@@ -1070,7 +1070,6 @@ h3 {
   }
 }
 
-
 /*--------------------------------- 404 ---------------------------------*/
 
 .not-found {
@@ -1078,14 +1077,15 @@ h3 {
 
   .background-container {
     position: relative;
+    user-select: none;
   }
   
   .background-img {
     position: absolute;
-    width: 1920px;
+    width: 4000px;
     height: 1080px;
     top: 0;
-    z-index: -10;
+    left: -1000px;
   }
 
   header {
@@ -1132,6 +1132,7 @@ h3 {
 
   .design-container {
     display: none;
+    user-select: none;
   }
 }
 
@@ -1212,9 +1213,5 @@ h3 {
   .not-found {
     display: grid;
     place-content: center;
-
-    .background-img {
-      left: -15%;
-    }
   }
 }
