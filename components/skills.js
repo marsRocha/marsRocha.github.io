@@ -60,7 +60,7 @@ const Skills = (props) => {
                 </motion.div>
                 <div className="skills-container">
                     <ul className="skills-list">
-                        <li className="skill-container">
+                        <motion.li className="skill-container" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                             <motion.div className="skill-icon-container" whileHover={{rotate: 40}}>
                                 <Image src='/skillIcons/design.png' layout='fill' alt='logo'/>
                             </motion.div>
@@ -77,8 +77,8 @@ const Skills = (props) => {
                                     : null
                                 }
                             </ul>
-                        </li>
-                        <li className="skill-container">
+                        </motion.li>
+                        <motion.li className="skill-container" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                             <motion.div className="skill-icon-container" whileHover={{rotate: 40}}>
                                 <Image src='/skillIcons/frontend.png' layout='fill' alt='logo'/>
                             </motion.div>
@@ -95,8 +95,8 @@ const Skills = (props) => {
                                     : null
                                 }
                             </ul>
-                        </li>
-                        <li className="skill-container">
+                        </motion.li>
+                        <motion.li className="skill-container" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                             <motion.div className="skill-icon-container" whileHover={{rotate: 40}}>
                                 <Image src='/skillIcons/backend.png' layout='fill' alt='logo'/>
                             </motion.div>
@@ -113,8 +113,8 @@ const Skills = (props) => {
                                     : null
                                 }
                             </ul>
-                        </li>
-                        <li className="skill-container">
+                        </motion.li>
+                        <motion.li className="skill-container" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                             <motion.div className="skill-icon-container" whileHover={{rotate: 40}}>
                                 <Image src='/skillIcons/game.png' layout='fill' alt='logo'/>
                             </motion.div>
@@ -131,7 +131,7 @@ const Skills = (props) => {
                                     : null
                                 }
                             </ul>
-                        </li>
+                        </motion.li>
                     </ul>
                 </div>
             </div>

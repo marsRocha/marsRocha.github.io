@@ -19,6 +19,8 @@ const Icon = (props) => {
             return <div className="tool-icon"><Image src="/extraIcons/cSharp.svg" alt="c#" width={extrasSize} height={extrasSize}/><p>{props.name}</p></div>
         case "C":
             return <div className="tool-icon"><Image src="/extraIcons/c.svg" alt="c#" width={extrasSize} height={extrasSize}/><p>{props.name}</p></div>
+        case "C++":
+            return <div className="tool-icon"><Image src="/extraIcons/cplusplus.svg" alt="c#" width={extrasSize} height={extrasSize}/><p>{props.name}</p></div>
         case "PHP":
             return <div className="tool-icon"><FaPhp/><p>{props.name}</p></div>
         case "HTML":

@@ -434,7 +434,6 @@ h3 {
     width: 80px;
     height: 80px;
     margin: auto;
-    filter: invert(96%) sepia(32%) saturate(5053%) hue-rotate(305deg) brightness(95%) contrast(83%);
   }
 
   ul:first-of-type {
@@ -523,7 +522,7 @@ h3 {
 
 /*--------------------------------- ARCHIVE ---------------------------------*/
 
-// swiper style
+// -------- swiper style---------
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 10px;
   left: 0;
@@ -542,10 +541,6 @@ h3 {
   margin: 0 4px;
 }
 
-/*.swiper-pagination-clickable .swiper-pagination-bullet {
-  cursor: pointer;
-}*/
-
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
@@ -558,7 +553,44 @@ h3 {
   }
 }
 
-// projects inside card 
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: 2em;
+  height: auto;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.swiper-button-next {
+  right: -2px;
+  left: auto;
+}
+
+.swiper-button-prev {
+  left: -2px;
+  right: auto;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  content: 'next';
+}
+
+.swiper-button-prev:after { 
+  transform: scale(-1, 1);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 2em;
+  line-height: 1;
+}
+
+//------------ projects inside card ------------------- 
 
 .project_card_inner {
   margin: 3.75em auto;
@@ -566,7 +598,6 @@ h3 {
   border-radius: 5px;
   padding: clamp(0.5em, 5vw, 1.875em);
   text-align: left;
-  height: 323px;
   max-width: 430px;
 
   header {
@@ -615,8 +646,6 @@ h3 {
   
   .project_desc {
     font-size: 1.0625em;
-    max-height: 140px;
-    overflow-y: scroll;
   }
 }
 
@@ -711,8 +740,8 @@ h3 {
 
 @media only screen and (min-width: 540px) {
   
-  .project_card_inner .project_desc {
-    max-height: none;
+  .project_card_inner {
+    height: 323px;
   }
 }
 

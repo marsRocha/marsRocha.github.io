@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 import 'swiper/css'
 import { useEffect, useState } from 'react';
 import ProjectCard from './projectCard'
@@ -51,10 +51,11 @@ const Archive = (props) => {
                 </motion.div>
                 <motion.div variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                     <Swiper
-                        modules={[Pagination]}
-                        spaceBetween={50}
-                        slidesPerView={mywindow.width && mywindow.width < 1500 ? mywindow.width < 1000 ? 1 : 2 : 3}
-                        pagination={{clickable: true}}
+                        modules={[Navigation, Pagination]}
+                        spaceBetween={10}
+                        slidesPerView={mywindow.width && mywindow.width < 1800 ? mywindow.width < 1200 ? 1 : 2 : 3}
+                        navigation= {mywindow.width && mywindow.width < 700 ? false : true}
+                        pagination={{ clickable: true }}
                         loop={true}
                         >
                         
