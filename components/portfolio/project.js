@@ -11,7 +11,7 @@ const Project = (props) => {
             <ul>
                 {props.project.tech.map((element, index) => (
                     <li key={index}>
-                        <div title={element} className="skill-container">
+                        <div title={element} className="skill-tools">
                             <Icon name={element}/>
                         </div>
                     </li>

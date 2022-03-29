@@ -10,7 +10,7 @@
     "about": {
         "profilePic": "me.png",
         "bio": [
-            "Hello! My name is Márcio and I’m Braga, Portugal. As logn as I can remember I’ve had a passion for video games which lead me towards computers and ultimately programming. Nowadays I develop my own video games and I’m also passionate about developing web applications, mainly on the entire frontend spectrum.",
+            "Hello! My name is Márcio and I’m Braga, Portugal. As long as I can remember I’ve had a passion for video games which lead me towards computers and ultimately programming. Nowadays I develop my own video games and I’m also passionate about developing web applications, mainly on the entire frontend spectrum.",
             "I consider myself a well-organised and hardworking person with a creative streak. I'm always keen to learn new technologies that excite me and improve my skills."
         ],
         "resumedownload": "https://raw.githubusercontent.com/marsRocha/marsRocha.github.io/master/cv_marcio_rocha.pdf",
@@ -58,44 +58,45 @@
     "skills": {
         "softwareDev": "I am a fullstack developer with a passion to bring beautiful and functional web designs to life.",
         "gameDev": "I bring to life whatever my imagination can find and implement the logic behind it to make it work.",
-        "languages": [
-            "Java",
-            "JavaScript",
-            "CSS",
-            "Python",
-            "C#",
-            "C",
-            "PHP",
-            "HTML",
-            "Swift"
-        ],
         "data": [
             "MySQL",
             "PostgreSQL",
             "MongoDB",
             "Neo4j"
         ],
-        "web": [
+        "design": [
+            "Adobe Illustrator",
+            "Adobe Lightroom",
+            "Adobe Photoshop",
+            "Figma",
+            "Procreate"
+        ],
+        "front": [
+            "HTML",
+            "CSS",
+            "PHP",
+            "JavaScript",
+            "Next.js",
+            "React",
+            "Vue.js"
+        ],
+        "back": [
+            "Java",
             "Spring",
             "Node.js",
-            "Next.js",
-            "Framer Motion",
-            "React",
-            "Vue.js",
-            "Bootstrap"
+            "MongoDB",
+            "PostgreSQL",
+            "Neo4j"
         ],
         "game": [
+            "Swift",
             "Unity",
+            "C#",
+            "C",
+            "C++",
             "Blender",
             "Autodesk Maya",
             "Autodesk 3DS Max"
-        ],
-        "design": [
-            "Figma",
-            "Adobe Photoshop",
-            "Adobe Illustrator",
-            "Adobe Lightroom",
-            "Procreate"
         ]
     },
     "portfolio": [

@@ -55,14 +55,14 @@ const Contact = (props) => {
             <div className="contact_container">
                 <motion.h2 className='contancts-title' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>Get In Touch</motion.h2>
                 <div className='hello_wrapper'>
-                    <motion.div variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
+                    <motion.div className="hello-button-container" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                         <motion.button whileHover={{ scale: 1.2 }}>
                             <a className='hello_btn' href={`mailto:${props.contacts.email}`}>Say Hello!</a>
                         </motion.button>
                     </motion.div>
                     <motion.div variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                         <CopyToClipboard text='marciorocha.dev@gmail.com'>
-                            <p>or you can copy my email</p>
+                            <span>or you can copy my email</span>
                         </CopyToClipboard>
                     </motion.div>
                 </div>

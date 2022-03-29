@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Icon from "../components/icon"
 import { useState } from "react";
+import Image from "next/image";
 
 const parentVariants = {
     hidden: {
@@ -55,9 +56,93 @@ const Skills = (props) => {
         <section id='skills'>
             <div>
                 <motion.div className="section_title" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
-                    <h2>Skills</h2>
+                    <h2>What I Can Do</h2>
                 </motion.div>
-                <motion.div className="skills-table-container" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
+                <div className="skills-container">
+                    <ul className="skills-list">
+                        <li className="skill-container">
+                            <motion.div className="skill-icon-container" whileHover={{rotate: 40}}>
+                                <Image src='/skillIcons/design.png' layout='fill' alt='logo'/>
+                            </motion.div>
+                            <p className="skill-title"><strong>Design</strong></p>
+                            <ul>
+                                {currentSkillArray == 0 || currentSkillArray == 1 ?
+                                    props.skills.design.map((name, index) => (
+                                        <li key={index}>
+                                            <div title={name} className="skill-tools">
+                                                <Icon name={name}/>
+                                            </div>
+                                        </li>
+                                    ))
+                                    : null
+                                }
+                            </ul>
+                        </li>
+                        <li className="skill-container">
+                            <motion.div className="skill-icon-container" whileHover={{rotate: 40}}>
+                                <Image src='/skillIcons/frontend.png' layout='fill' alt='logo'/>
+                            </motion.div>
+                            <p className="skill-title"><strong>Front End Development</strong></p>
+                            <ul>
+                                {currentSkillArray == 0 || currentSkillArray == 1 ?
+                                    props.skills.front.map((name, index) => (
+                                        <li key={index}>
+                                            <div title={name} className="skill-tools">
+                                                <Icon name={name}/>
+                                            </div>
+                                        </li>
+                                    ))
+                                    : null
+                                }
+                            </ul>
+                        </li>
+                        <li className="skill-container">
+                            <motion.div className="skill-icon-container" whileHover={{rotate: 40}}>
+                                <Image src='/skillIcons/backend.png' layout='fill' alt='logo'/>
+                            </motion.div>
+                            <p className="skill-title"><strong>Back End Development</strong></p>
+                            <ul>
+                                {currentSkillArray == 0 || currentSkillArray == 1 ?
+                                    props.skills.back.map((name, index) => (
+                                        <li key={index}>
+                                            <div title={name} className="skill-tools">
+                                                <Icon name={name}/>
+                                            </div>
+                                        </li>
+                                    ))
+                                    : null
+                                }
+                            </ul>
+                        </li>
+                        <li className="skill-container">
+                            <motion.div className="skill-icon-container" whileHover={{rotate: 40}}>
+                                <Image src='/skillIcons/game.png' layout='fill' alt='logo'/>
+                            </motion.div>
+                            <p className="skill-title"><strong>Game Development</strong></p>
+                            <ul>
+                                {currentSkillArray == 0 || currentSkillArray == 1 ?
+                                    props.skills.game.map((name, index) => (
+                                        <li key={index}>
+                                            <div title={name} className="skill-tools">
+                                                <Icon name={name}/>
+                                            </div>
+                                        </li>
+                                    ))
+                                    : null
+                                }
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+     );
+}
+ 
+export default Skills;
+
+/*
+<motion.div className="skills-table-container" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                     <div>
                         <header>
                             {tableSectiors.map((element, index) => (
@@ -122,9 +207,4 @@ const Skills = (props) => {
                         </ul>
                     </div>
                 </motion.div>
-            </div>
-        </section>
-     );
-}
- 
-export default Skills;
+                */
