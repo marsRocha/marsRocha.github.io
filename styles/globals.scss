@@ -340,7 +340,12 @@ h3 {
   text-align: left;
 
   &.two{
-    margin-top: 6em;
+    margin-top: 3em;
+
+    .title_div {
+      margin-bottom: 1em;
+    }
+
   }
 
   .content {

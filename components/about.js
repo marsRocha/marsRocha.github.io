@@ -56,26 +56,18 @@ const About = (props) => {
                         </motion.div>
                     </div>
                     <div className="info_container two">
-                        <motion.h3 className='subsubsection_title two' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>Work Experience</motion.h3>
                         <motion.div className='info_inner' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
-                            <div className='tab-jobs'>
-                                {props.about.work.slice(0).reverse().map(job => (
-                                    <button className={`work-button ${currentJob == job.id ? 'work-button-active' : ''}`} key={job.id} id={job.id} onClick={() => {setCurrentJob(job.id)}}>
-                                        <span>{job.company}</span>
-                                    </button>
-                                ))}
-                            </div>
                             <div className="content jobs">
-                                <h4>
-                                    <span>{props.about.work[currentJob].role}</span> 
-                                    <span className='company'> @ <a target="_blank" rel="noopener noreferrer" href={props.about.work[currentJob].companyUrl}>
-                                        {props.about.work[currentJob].company}</a></span>
-                                </h4>
-                                <p>{props.about.work[currentJob].timespan}</p>
+                                <div className='title_div'>
+                                    <span>During my academic path I also attended:</span>
+                                </div>
                                 <ul>
-                                    {props.about.work[currentJob].notes.map((note, index) => (
-                                        <li key={index}>{note}</li>
-                                    ))}
+                                    <li>IPCA C# advanced workshop, 2018</li>
+                                    <li>IPCA GameDev Week, 2018</li>
+                                    <li>IPCA Game Jam, 2019</li>
+                                    <li>IPCA Third Winter School on Artificial Intelligence for Games, 2019</li>
+                                    <li>Google/IPCA Android Training Program, 2019</li>
+                                    <li>ESMAD MAD Game Jam, 2019 and 2020</li>
                                 </ul>
                             </div>
                         </motion.div>
