@@ -1,11 +1,11 @@
 {
     "hero": {
-      "name": "Márcio Rocha",
-      "description": [
-        "Software Developer",
-        "Game Developer",
-        "Fullstack Developer"
-      ]
+        "name": "Márcio Rocha",
+        "description": [
+            "Software Developer",
+            "Game Developer",
+            "Fullstack Developer"
+        ]
     },
     "about": {
         "profilePic": "me.png",
@@ -16,45 +16,66 @@
         "resumedownload": "https://raw.githubusercontent.com/marsRocha/marsRocha.github.io/master/cv_marcio_rocha.pdf",
         "education": [
             {
-              "school": "University of Minho",
-              "degree": "Master’s Degree in Computer Science",
-              "graduated": "2019 - 2022",
-              "description": "Specialization in Application Engineering and Distributed Systems"
+                "school": "University of Minho",
+                "degree": "Master’s Degree in Computer Science",
+                "graduated": "2019 - 2022",
+                "description": "Specialization in Application Engineering and Distributed Systems"
             },
             {
                 "school": "Polytechnic Institute of Cávado and Ave",
                 "degree": "Bachelor’s Degree in Digital Games Development Engineering",
                 "graduated": "2016 - 2019",
                 "description": null
-              }
-          ],
+            }
+        ],
         "work": [
             {
                 "id": 0,
                 "company": "Hivolve",
                 "companyUrl": "https://hivolve.com",
-                "timespan": "Mar. - Jul. 2019",
+                "timespan": "Mar. 2019 - Jul. 2019",
                 "role": "Game Developer",
                 "notes": [
-                    "Designed and developed multiple mobile games in Unity for both Android and iOS",
-                    "Maintained schedules and assured on-time delivery of proposed tasks",
-                    "Established teamwork practice skills with a cross-functional team"
+                    "Designed and developed mobile games.",
+                    "Collaborated with cross-functional team.",
+                    "Participated in Agile development processes and Scrum meetings."
                 ]
             },
             {
                 "id": 1,
                 "company": "Accenture",
-                "companyUrl": "https://www.accenture.com",
+                "companyUrl": "https://accenture.com",
                 "timespan": "Out. 2020 - Feb. 2021",
-                "role": "Software Engineer",
+                "role": "Fullstack Developer",
                 "notes": [
-                    "Improved an already existing fleet management web application",
-                    "Integrated new features with Google Cloud Platform technologies",
-                    "Developed solutions for storing and processing data from IoT devices"
+                    "University’s industry collaboration project in IoT and smart mobility.",
+                    "Leveraged Google Cloud Platform technologies to store and process data."
+                ]
+            },
+            {
+                "id": 2,
+                "company": "Exaud",
+                "companyUrl": "https://exaud.com",
+                "timespan": "May. 2022 - Today",
+                "role": "Fullstack Developer",
+                "notes": [
+                    "Worked on the whole development process of multiple software applications and websites.",
+                    "Spearheaded the development of blockchain mobile app.",
+                    "Communicated with clients to identify their needs and requirements.",
+                    "Conducted code reviews, ensured code quality, and performed debugging and testing."
                 ]
             }
         ]
     },
+    "extracurriculars": [
+        "“C# Advanced Workshop” organised by EST, IPCA",
+        "“IPCA GameDev Week 2018” organised by IPCA",
+        "I“IPCA Game Jam 2019” organised by IPCA",
+        "IPCA Third Winter School on Artificial Intelligence for Games, 2019",
+        "“Third Winter School on Artificial Intelligence for Games” organised by EST, IPCA",
+        "“Android Training Program” organised by Google and EST, IPCA",
+        "“MAD Game Jam” of 2019 and 2020 organised by ESMAD, IPP"
+    ],
     "skills": {
         "softwareDev": "I am a fullstack developer with a passion to bring beautiful and functional web designs to life.",
         "gameDev": "I bring to life whatever my imagination can find and implement the logic behind it to make it work.",
@@ -106,14 +127,14 @@
             "tech": [
                 "Vue.js",
                 "Bootstrap",
-                "Spring", 
+                "Spring",
                 "Java"
             ],
             "externalLinks": {
                 "sourceCode": null,
-                "demo": null 
+                "demo": null
             },
-            "img" : "nutris.svg"
+            "img": "nutris.svg"
         },
         {
             "title": "Multiplayer Game System",
@@ -122,11 +143,11 @@
                 "Unity",
                 "C#"
             ],
-            "externalLinks": { 
+            "externalLinks": {
                 "sourceCode": null,
                 "demo": null
             },
-            "img" : "dummyguys.svg"
+            "img": "dummyguys.svg"
         },
         {
             "title": "Backup Surgeons",
@@ -140,7 +161,7 @@
                 "sourceCode": null,
                 "demo": null
             },
-            "img" : "backupsurgeons.svg"
+            "img": "backupsurgeons.svg"
         }
     ],
     "archive": [
@@ -152,7 +173,7 @@
                 "Erlang",
                 "Java"
             ],
-            "externalLinks": { 
+            "externalLinks": {
                 "sourceCode": null,
                 "demo": null
             }
@@ -168,7 +189,7 @@
                 "CSS",
                 "Framer Motion"
             ],
-            "externalLinks": { 
+            "externalLinks": {
                 "sourceCode": null,
                 "demo": null
             }
@@ -182,7 +203,7 @@
                 "Java",
                 "CSS"
             ],
-            "externalLinks": { 
+            "externalLinks": {
                 "sourceCode": null,
                 "demo": null
             }
@@ -194,9 +215,9 @@
             "tech": [
                 "Python"
             ],
-            "externalLinks": { 
+            "externalLinks": {
                 "sourceCode": "https://github.com/Dans24/SDLE-Decentralized-Aggregation",
-                "demo": null 
+                "demo": null
             }
         }
     ],
