@@ -233,16 +233,6 @@
                 "name": "LinkedIn",
                 "url": "https://www.linkedin.com/in/marcio-silva-rocha",
                 "className": "linkedin"
-            },
-            {
-                "name": "Instagram",
-                "url": "https://www.instagram.com/marcio._.rocha/",
-                "className": "instagram"
-            },
-            {
-                "name": "Twitter",
-                "url": "https://twitter.com/marsRoch",
-                "className": "twitter"
             }
         ]
     }

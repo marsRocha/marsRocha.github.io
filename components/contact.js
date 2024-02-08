@@ -2,7 +2,7 @@ import Footer from './footer';
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import { motion } from 'framer-motion';
 
-import { FiTwitter, FiInstagram, FiLinkedin, FiGithub } from "react-icons/fi";
+import { FiLinkedin, FiGithub } from "react-icons/fi";
 
 const parentVariants = {
     hidden: {
@@ -78,20 +78,6 @@ const Contact = (props) => {
                             <motion.div whileHover={{ scale: 1.2 }} className="icon_wrapper">
                                 <a title={`${props.contacts.socials[1].name}`} target="_blank" rel="noopener noreferrer" href={props.contacts.socials[1].url}>
                                     <FiLinkedin/>
-                                </a>
-                            </motion.div>
-                        </motion.li>
-                        <motion.li variants={childVariants}>
-                            <motion.div whileHover={{ scale: 1.2 }} className="icon_wrapper">
-                                <a title={`${props.contacts.socials[2].name}`} target="_blank" rel="noopener noreferrer" href={props.contacts.socials[2].url}>
-                                    <FiInstagram/>
-                                </a>
-                            </motion.div>
-                        </motion.li>
-                        <motion.li variants={childVariants}>
-                            <motion.div whileHover={{ scale: 1.2 }} className="icon_wrapper">
-                                <a title={`${props.contacts.socials[3].name}`} target="_blank" rel="noopener noreferrer" href={props.contacts.socials[3].url}>
-                                    <FiTwitter/>
                                 </a>
                             </motion.div>
                         </motion.li>
