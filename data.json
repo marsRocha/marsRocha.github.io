@@ -65,17 +65,17 @@
                     "Conducted code reviews, ensured code quality, and performed debugging and testing."
                 ]
             }
+        ],
+        "extracurriculars": [
+            "“C# Advanced Workshop” organised by EST, IPCA",
+            "“IPCA GameDev Week 2018” organised by IPCA",
+            "“IPCA Game Jam 2019” organised by IPCA",
+            "“IPCA Third Winter School on Artificial Intelligence for Games“, 2019",
+            "“Third Winter School on Artificial Intelligence for Games” organised by EST, IPCA",
+            "“Android Training Program” organised by Google and EST, IPCA",
+            "“MAD Game Jam” of 2019 and 2020 organised by ESMAD, IPP"
         ]
     },
-    "extracurriculars": [
-        "“C# Advanced Workshop” organised by EST, IPCA",
-        "“IPCA GameDev Week 2018” organised by IPCA",
-        "I“IPCA Game Jam 2019” organised by IPCA",
-        "IPCA Third Winter School on Artificial Intelligence for Games, 2019",
-        "“Third Winter School on Artificial Intelligence for Games” organised by EST, IPCA",
-        "“Android Training Program” organised by Google and EST, IPCA",
-        "“MAD Game Jam” of 2019 and 2020 organised by ESMAD, IPP"
-    ],
     "skills": {
         "softwareDev": "I am a fullstack developer with a passion to bring beautiful and functional web designs to life.",
         "gameDev": "I bring to life whatever my imagination can find and implement the logic behind it to make it work.",
