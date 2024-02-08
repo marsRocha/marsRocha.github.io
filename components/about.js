@@ -48,8 +48,8 @@ const About = (props) => {
                             {props.about.education.map((edu, index) => (
                                 <div key={index}>
                                     <p>⦾ {edu.graduated}</p>
-                                    <p className='ident1'><strong>{edu.school}</strong></p>
-                                    <p className='ident1'>{edu.degree}</p>
+                                    <p className='ident1'><strong>{edu.degree}</strong></p>
+                                    <p className='ident2'>{edu.school}</p>
                                     {edu.description != null ? <p className='ident2'>{edu.description}</p> : null}
                                 </div>
                             ))}

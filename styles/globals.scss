@@ -128,7 +128,7 @@ h3 {
   width: 41px;
   height: 1px;
   margin-right: 30px;
-  background-color: #212121;
+  background-color: #5d5236;
 }
 
 //--------------------------------- MAIN --------------------------------
@@ -302,9 +302,9 @@ h3 {
   text-align: center;
   a {
     border: 1px solid #DFC172;
-    border-radius: 3px;
+    border-radius: 100px;
+    background-color: #DFC172;
     padding: 1em 3.175em;
-    color: #DFC172;
   }
 }
 
@@ -393,6 +393,7 @@ h3 {
 
     .ident1 {
       padding-left: 1em;
+      font-size: 1rem;
     }
 
     .ident2 {
@@ -677,9 +678,9 @@ h3 {
 
   a {
     border: 1px solid #DFC172;
-    border-radius: 3px;
+    border-radius: 100px;
     padding: 1em 3.175em;
-    color: #DFC172;
+    background-color: #DFC172;
     overflow: hidden
   }
 
