@@ -93,10 +93,6 @@ export default function Home() {
       <Archive archive={data.archive}/>
 
       <Contact contacts={data.contacts}/>
-
-      <div className='stars-container'>
-        <motion.img className='stars-bottom' src="/stars-bottom.png" alt='background'></motion.img>
-      </div>
     </div>
   )
 }
