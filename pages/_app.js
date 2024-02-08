@@ -6,8 +6,8 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Márcio Rocha</title>
-        <meta name="description" content="The portfolio of Márcio Rocha." />
+        <title>Marcio Rocha</title>
+        <meta name="description" content="The portfolio of Marcio Rocha." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
