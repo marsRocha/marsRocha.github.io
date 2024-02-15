@@ -387,7 +387,7 @@ h3 {
       }
     }
 
-    .ident1, .ident2 {
+    .ident1, .ident2, .ident3 {
       margin: 0;
     }
 
@@ -397,6 +397,12 @@ h3 {
     }
 
     .ident2 {
+      padding-left: 2em;
+      font-size: 0.9em;
+    }
+
+    .ident3 {
+      padding-top: .5em;
       padding-left: 2em;
       font-size: 0.9em;
     }

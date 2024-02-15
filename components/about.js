@@ -50,7 +50,7 @@ const About = (props) => {
                                     <p>⦾ {edu.graduated}</p>
                                     <p className='ident1'><strong>{edu.degree}</strong></p>
                                     <p className='ident2'>{edu.school}</p>
-                                    {edu.description != null ? <p className='ident2'>{edu.description}</p> : null}
+                                    {edu.description != null ? <p className='ident3'>{edu.description}</p> : null}
                                 </div>
                             ))}
                         </motion.div>
