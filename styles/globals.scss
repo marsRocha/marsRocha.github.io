@@ -813,7 +813,7 @@ h3 {
     &.two {
       .info_inner {
         display: flex;
-        height: 200px;
+        height: 320px;
     
         .content{
           margin-top: 0em;
@@ -829,7 +829,7 @@ h3 {
           overflow-x: unset;
           border-left: 1px solid #5d5236;
           padding: 0em;
-          max-width: 160px;
+          width: 120px;
     
           .work-button {
             display: unset;
