@@ -17,16 +17,16 @@
         "resumedownload": "https://raw.githubusercontent.com/marsRocha/marsRocha.github.io/master/cv_marcio_rocha.pdf",
         "education": [
             {
-                "school": "University of Minho",
+                "school": "School of Engineering of University of Minho",
                 "degree": "Master’s Degree in Computer Science",
                 "graduated": "2019 - 2022",
-                "description": "Specialization in Application Engineering and Distributed Systems."
+                "description": "Specialization: Application Engineering and Distributed Systems."
             },
             {
                 "school": "Polytechnic Institute of Cávado and Ave",
                 "degree": "Bachelor’s Degree in Digital Games Development Engineering",
                 "graduated": "2016 - 2019",
-                "description": null
+                "description": "Areas of focus: Algorithms and Data Structures, Computational Mathematics, Game Development, Computer Graphics, AI, 3D Programming, Network Programming."
             }
         ],
         "work": [
@@ -38,8 +38,8 @@
                 "role": "Game Developer",
                 "notes": [
                     "Designed and developed mobile games.",
-                    "Collaborated with cross-functional team.",
-                    "Participated in Agile development processes and Scrum meetings."
+                    "Implemented version control and collaborated with a cross-functional team using GitHub and Trello, boosting productivity.",
+                    "Conducted extensive playtesting and user feedback analysis, eliminating game bugs."
                 ]
             },
             {
@@ -49,8 +49,8 @@
                 "timespan": "Out. 2020 - Feb. 2021",
                 "role": "Fullstack Developer",
                 "notes": [
-                    "University’s industry collaboration project in IoT and smart mobility.",
-                    "Leveraged Google Cloud Platform technologies to store and process data."
+                    "Improved a fleet management platform focused on IoT and smart mobility, leveraging GCP technologies for efficient data storage and processing, successfully improving performance and reducing latency in data processing.",
+                    "Developed a React web interface for data accessibility while focusing on a user-friendly experience."
                 ]
             },
             {
@@ -60,10 +60,11 @@
                 "timespan": "May. 2022 - Today",
                 "role": "Fullstack Developer",
                 "notes": [
-                    "Worked on the whole development process of multiple software applications and websites.",
-                    "Spearheaded the development of blockchain mobile app.",
-                    "Communicated with clients to identify their needs and requirements.",
-                    "Conducted code reviews, ensured code quality, and performed debugging and testing."
+                    "Contributed to a diagnostics and preventative eye care VR app, optimized medical tests for better performance and accuracy, and added data collection for analytic capabilities using GCP.",
+                    "Worked on a web app for a construction company, creating intuitive UI and backend services for data processing.",
+                    "Developed a prototype for a non-custodial crypto wallet app using ReactNative, which led to actual implementation by the client.",
+                    "Proactively engaged in Agile development with clients to identify their needs and requirements, ensuring alignment between projects and expectations.",
+                    "Conducted code reviews, ensured code quality, performed debugging, and created unit tests to identify and prevent bugs."
                 ]
             }
         ],
