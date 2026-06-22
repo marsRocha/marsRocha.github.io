@@ -71,7 +71,7 @@ const Hero = (props) => {
                 cursorStyle='_'
                 typeSpeed={70}
                 deleteSpeed={50}
-                delaySpeed={1000}
+                delaySpeed={3000}
                 />
             </motion.h1>
           </div>
