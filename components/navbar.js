@@ -50,7 +50,7 @@ const navbar = () => {
     return (
         <div className="nav_container" id="navbar">
             <header>
-                <motion.div className="logo" variants={logoVariants} initial="hidden" animate="visible" whileHover={{ scale: 1.2 }}>
+                <motion.div className="logo" variants={logoVariants} initial="hidden" animate="visible">
                     <a href='.'>
                         <Image src='/logo.svg' layout='fill' alt='logo'/>
                     </a>
@@ -59,32 +59,19 @@ const navbar = () => {
                     <ul className='navLinks'>
                         <motion.div variants={childVariants}>
                             <Link to="about" href="#about" smooth={true}>
-                                <motion.div whileHover={{ scale: 1.2 }}>
+                                <motion.div>
                                     <span>About</span>
                                 </motion.div>
                             </Link>
                         </motion.div>
                         <motion.div variants={childVariants}>    
                             <Link to="skills" href="/#work" smooth={true}>
-                                <motion.div whileHover={{ scale: 1.2 }}>
+                                <motion.div>
                                     <span>Skills</span>
                                 </motion.div>
                             </Link>
                         </motion.div>
-                        <motion.div variants={childVariants}>
-                            <Link to="portfolio" href="/#portfolio" smooth={true}>
-                                <motion.div whileHover={{ scale: 1.2 }}>
-                                    <span>Work</span>
-                                </motion.div>
-                            </Link>
-                        </motion.div>
-                        <motion.div variants={childVariants}>   
-                            <Link to="contact" href="/#contact" smooth={true}>
-                                <motion.div whileHover={{ scale: 1.2 }}>
-                                    <span>Contact</span>
-                                </motion.div>
-                            </Link>
-                        </motion.div>
+
                     </ul>
                 </motion.nav>
             </header>

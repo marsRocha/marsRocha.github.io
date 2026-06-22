@@ -21,8 +21,13 @@ const Portfolio = (props) => {
     return ( 
         <section className="portfolio" id='portfolio'>
             <div>
-                <motion.div className="section_title" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
-                    <h2>Featured Projects</h2>
+                <motion.div className="section_title_marquee" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
+                    <span className="marquee-grey">FEATURED PROJECTS&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span className="marquee-white">FEATURED PROJECTS&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span className="marquee-grey">FEATURED PROJECTS&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span className="marquee-grey">FEATURED PROJECTS&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span className="marquee-grey">FEATURED PROJECTS&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span className="marquee-grey">FEATURED PROJECTS&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 </motion.div>
                 <div className='projects_container'>
                     <div className="project_container">
@@ -31,7 +36,7 @@ const Portfolio = (props) => {
                                 <Project project={props.portfolio[0]}/>
                             </motion.div>
                         </div>
-                        <motion.div variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
+                        <motion.div className='proj-img-wrapper' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                             <Image className='proj-img' src={`/proj/${props.portfolio[0].img}`} alt='project1' width={1842} height={1071}/>
                         </motion.div>
                         <div className='small-version'>
@@ -41,7 +46,7 @@ const Portfolio = (props) => {
                         </div>
                     </div>
                     <div className="project_container inverse">
-                        <motion.div variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
+                        <motion.div className='proj-img-wrapper' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                             <Image className='proj-img' src={`/proj/${props.portfolio[1].img}`} alt='project2' width={1842} height={1071}/>
                         </motion.div>
                         <div className='project-info'>
@@ -56,7 +61,7 @@ const Portfolio = (props) => {
                                 <Project project={props.portfolio[2]}/>
                             </motion.div>
                         </div>
-                        <motion.div variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
+                        <motion.div className='proj-img-wrapper' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                             <Image className='proj-img' src={`/proj/${props.portfolio[2].img}`} alt='project3' width={1842} height={1071}/>
                         </motion.div>
                         <div className='small-version'>

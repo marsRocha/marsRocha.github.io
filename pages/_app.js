@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="The portfolio of Marcio Rocha." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="crt-overlay" aria-hidden="true" />
       <Component {...pageProps} />
     </>
   )

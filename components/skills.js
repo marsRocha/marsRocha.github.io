@@ -55,8 +55,13 @@ const Skills = (props) => {
     return ( 
         <section id='skills'>
             <div>
-                <motion.div className="section_title" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
-                    <h2>What I Can Do</h2>
+                <motion.div className="section_title_marquee" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
+                    <span className="marquee-grey">WHAT I CAN DO&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span className="marquee-white">WHAT I CAN DO&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span className="marquee-grey">WHAT I CAN DO&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span className="marquee-grey">WHAT I CAN DO&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span className="marquee-grey">WHAT I CAN DO&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span className="marquee-grey">WHAT I CAN DO&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 </motion.div>
                 <div className="skills-container">
                     <ul className="skills-list">

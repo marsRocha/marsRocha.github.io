@@ -9,7 +9,6 @@ import Archive from '../components/archive/archive'
 import data from '../data.json'
 
 import { IoMdRocket} from "react-icons/io"
-
 import { useEffect, useState, useRef, useLayoutEffect } from 'react';
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import { Link } from 'react-scroll'

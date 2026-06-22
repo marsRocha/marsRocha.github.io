@@ -10,8 +10,8 @@ const ProjectCard = (props) => {
                 <ul>
                     {props.project.externalLinks.sourceCode != null ? 
                         <li name="source-code">
-                            <motion.div whileHover={{ scale: 1.2 }}>    
-                                <a title='Source Code'  target="_blank" rel="noreferrer noopener" href={props.project.externalLinks.sourceCode}>
+                            <motion.div>
+                                <a title='Source Code' target="_blank" rel="noreferrer noopener" href={props.project.externalLinks.sourceCode}>
                                     <FiGithub/>
                                 </a>
                             </motion.div>
@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
                     : null}
                     {props.project.externalLinks.demo != null ? 
                         <li name="demo">
-                            <motion.div whileHover={{ scale: 1.2 }}>    
+                            <motion.div>
                                 <a title='External Link' target="_blank" rel="noreferrer noopener" href={props.project.externalLinks.demo}>
                                     <FiExternalLink/>
                                 </a>

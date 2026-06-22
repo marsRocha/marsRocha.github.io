@@ -1,7 +1,12 @@
 import Image from 'next/image'
 import { motion} from 'framer-motion'
 import { Link } from 'react-scroll';
-import { Typewriter } from 'react-simple-typewriter'
+import dynamic from 'next/dynamic'
+
+const Typewriter = dynamic(
+  () => import('react-simple-typewriter').then(mod => mod.Typewriter),
+  { ssr: false }
+)
 
 const parentVariants = {
   hidden: {
@@ -61,7 +66,7 @@ const Hero = (props) => {
               className="hero_subtitle">
               <Typewriter
                 words={props.hero.description}
-                loop={true}
+                loop={0}
                 cursor
                 cursorStyle='_'
                 typeSpeed={70}
@@ -79,8 +84,8 @@ const Hero = (props) => {
                 <Link to="about" href="#about" smooth={true}>
                   <div> 
                     <svg width="50" height="95" viewBox="0 0 50 95" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="3" y="3" width="44" height="89" rx="22" stroke="#FFFFFF" strokeWidth="5"/>
-                      <motion.circle className="circle" cx="25.5" cy="68.5" r="14.5" fill="#FFFFFF" animate={{y: [-40, 0, 0]}} transition={{ duration: 1, repeat: Infinity, repeatType: "reverse"}}/>
+                      <rect x="3" y="3" width="44" height="89" rx="4" stroke="#FFFFFF" strokeWidth="5"/>
+                      <motion.rect className="circle" x="11" y="54" width="29" height="29" rx="4" fill="#FFFFFF" animate={{y: [-40, 0, 0]}} transition={{ duration: 1, repeat: Infinity, repeatType: "reverse"}}/>
                     </svg>
                   </div>
                 </Link>
@@ -88,13 +93,6 @@ const Hero = (props) => {
             </motion.div>
           </div>
         </motion.div>
-        <div className="hero_design__container">
-          <motion.div className="hero_design" variants={heroVariants} initial = "hidden" animate = "visible">
-            <motion.div animate={{y: [-20, 0]}} transition={{ duration: 3, repeat: Infinity, repeatType: "reverse"}}>
-              <Image src="/guy.png" alt='logo' width="1024" height="1252"/>
-            </motion.div>
-          </motion.div>
-        </div>
       </div>
     </section>
     );

@@ -56,7 +56,7 @@ const Contact = (props) => {
                 <motion.h2 className='contancts-title' variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>Get In Touch</motion.h2>
                 <div className='hello_wrapper'>
                     <motion.div className="hello-button-container" variants={soloVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
-                        <motion.button whileHover={{ scale: 1.2 }}>
+                        <motion.button>
                             <a className='hello_btn' href={`mailto:${props.contacts.email}`}>Say Hello!</a>
                         </motion.button>
                     </motion.div>
@@ -68,14 +68,14 @@ const Contact = (props) => {
                 </div>
                 <motion.div className="social_contacts" variants={parentVariants} initial="hidden" whileInView="visible" viewport={{once: true}}>
                         <motion.li variants={childVariants}>
-                            <motion.div whileHover={{ scale: 1.2 }} className="icon_wrapper">
+                            <motion.div className="icon_wrapper">
                                 <a title={`${props.contacts.socials[0].name}`} target="_blank" rel="noopener noreferrer" href={`${props.contacts.socials[0].url}`}>
                                     <FiGithub/>
                                 </a>
                             </motion.div>
                         </motion.li>
                         <motion.li variants={childVariants}>
-                            <motion.div whileHover={{ scale: 1.2 }} className="icon_wrapper">
+                            <motion.div className="icon_wrapper">
                                 <a title={`${props.contacts.socials[1].name}`} target="_blank" rel="noopener noreferrer" href={props.contacts.socials[1].url}>
                                     <FiLinkedin/>
                                 </a>
